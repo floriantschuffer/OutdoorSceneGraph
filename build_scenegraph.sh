@@ -1,9 +1,9 @@
 #!/bin/bash
-PROJECT_PATH=""
-SCENE="LIN"
-CONDA_BIN=""
+PROJECT_PATH="/Users/floriantschuffer/huggingFaceVenv/src/OutdoorSceneGraph"
+SCENE="MOUNTAINS"
+CONDA_BIN="/Users/floriantschuffer/huggingFaceVenv/.venv/bin"
 
-source $CONDA_BIN/activate osg
+# source $CONDA_BIN/activate
 
 cd $PROJECT_PATH
 cd src
