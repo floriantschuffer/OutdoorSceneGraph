@@ -1,6 +1,6 @@
 #!/bin/bash
 PROJECT_PATH="/Users/floriantschuffer/huggingFaceVenv/src/OutdoorSceneGraph"
-SCENE="MOUNTAINS"
+SCENE="bag_2025_6_4_15_27_55"
 CONDA_BIN="/Users/floriantschuffer/huggingFaceVenv/.venv/bin"
 
 # source $CONDA_BIN/activate

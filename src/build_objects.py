@@ -36,7 +36,7 @@ def main():
     scene_name = args.scene
     root_path = args.path
     out_path = osp.join(root_path, "out", scene_name)
-    data_path = osp.join(root_path, "Lamar", scene_name)
+    data_path = osp.join(root_path, "data", scene_name)
     if not os.path.exists(out_path):
         os.makedirs(out_path)
         os.makedirs(osp.join(out_path, "sam"))
@@ -62,6 +62,7 @@ def main():
     print("loading SAM and DINOv2...")
     start = time.time()
     device = "cuda" if torch.cuda.is_available() else "cpu"
+    device = "mps" if torch.backends.mps.is_available() else device
     sam = sam_model_registry["vit_h"](checkpoint="../SAM_checkpoint/sam_vit_h_4b8939.pth")
     sam.to(device)
     mask_generator = SamAutomaticMaskGenerator(
