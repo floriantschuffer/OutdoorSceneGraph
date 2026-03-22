@@ -1,2 +1,6 @@
 
 data/
+out/
+utils/__pycache__/
+SAM_checkpoint/
+.DS_Store
