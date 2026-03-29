@@ -31,7 +31,7 @@ def main():
     scene_name = args.scene
     root_path = args.path
     out_path = osp.join(root_path, "out", scene_name)
-    data_path = osp.join(root_path, "Lamar", scene_name)
+    data_path = osp.join(root_path, "data", scene_name)
 
 
     ### Reading everything
